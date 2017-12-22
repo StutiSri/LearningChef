@@ -1,0 +1,7 @@
+.chef
+.vagrant
+.git
+.DS_Store
+nodes/
+.idea/
+.berkshelf

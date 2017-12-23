@@ -1,5 +1,5 @@
 <VirtualHost *:80>
-  ServerName <%= node ['hostname'] %>
+  ServerName <%= node['hostname'] %>
   ServerAdmin 'ops@example.com'
 
   DocumentRoot <%= node['lamp']['web']['document_root'] %>
@@ -15,13 +15,13 @@
 
   ErrorLog /var/log/apache2/error.log
 
-  LogLevel wanr
+  LogLevel warn
 
   CustomLog /var/log/apache2/access.log combined
   ServerSignature Off
 
   AddType application/x-httpd-php .php
-  AddType applciation/x-httpd-php-source .phps
+  AddType application/x-httpd-php-source .phps
   DirectoryIndex index.php index.html
 
 </VirtualHost>

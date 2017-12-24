@@ -9,6 +9,10 @@ describe package 'apache2' do
   it { should be_installed }
 end
 
+describe package 'php5-mysql' do
+  it { should be_installed }
+end
+
 describe service 'apache2-default' do
   it { should be_enabled }
   it { should be_running }

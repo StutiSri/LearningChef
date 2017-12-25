@@ -6,7 +6,7 @@ CREATE TABLE customers(
   email VARCHAR(64)
 );
 
-INSERT INTO customers (id, first_name, last_name, email) VALUES (uuid,
+INSERT INTO customers (id, first_name, last_name, email) VALUES (123,
 'Jane', 'Smith', 'janesmith@gmail.com');
-INSERT INTO customers (id, first_name, last_name, email) VALUES (uuid,
+INSERT INTO customers (id, first_name, last_name, email) VALUES (145,
 'Stuti', 'Srivastava', 'stutisri@gmail.com');

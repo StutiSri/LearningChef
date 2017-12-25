@@ -26,3 +26,12 @@ execute "initialize #{node['lamp']['database']['dbname']} database" do
  -p#{passwords['admin_password']} -D #{node['lamp']['database']['dbname']} -e
  'describe customers;'"
 end
+
+# Write the home page
+template "#{node['lamp']['web']['document_root']}/index.php" do
+  source 'index.php.erb'
+  variables(
+      serbername: '127.0.0.1',
+      admin_password: passwords['admin_password']
+  )
+end
